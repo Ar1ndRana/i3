@@ -37,8 +37,13 @@ exec --no-startup-id nm-applet
 # Autorun on Startup
 exec --no-startup-id udiskie
 exec --no-startup-id volumeicon
-exec --no-startup-id feh --bg-fill ~/.wallpapers/bg_12.jpg
+
+# Touchpad (replace the name of touchpad with yours. Hint: Use "xinput list")
 exec --no-startup-id xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Tapping Enabled" 1
+
+# Wallpaper (replace the image location)
+
+exec --no-startup-id feh --bg-fill ~/.wallpapers/bg_12.jpg
 
 # Use pactl to adjust volume in PulseAudio.
 #set $refresh_i3status killall -SIGUSR1 i3status

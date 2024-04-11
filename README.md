@@ -14,7 +14,7 @@
 
 **Installation**
 
-Assuming that you have yay aur helper.
+Assuming that you have yay as your aur helper.
 
 ```
 yay -Syu i3-wm i3blocks i3lock i3status alacritty network-manager-applet volumeicon brightnessctl udiskie feh xorg-xinput fish

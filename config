@@ -37,7 +37,7 @@ exec --no-startup-id nm-applet
 # Autorun on Startup
 exec --no-startup-id udiskie
 exec --no-startup-id volumeicon
-exec --no-startup-id feh --bg-fill ~/Downloads/roomMilaiDinxu.jpg
+exec --no-startup-id feh --bg-fill ~/.wallpapers/bg_12.jpg
 exec --no-startup-id xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Tapping Enabled" 1
 
 # Use pactl to adjust volume in PulseAudio.
@@ -48,8 +48,8 @@ exec --no-startup-id xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Tappin
 #bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s 5%+ && $refresh_i3status
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%- && $refresh_i3status
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s 5%+ && $refresh_i3status && exec bash ~/.config/i3/brightness.sh
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%- && $refresh_i3status && exec bash ~/.config/i3/brightness.sh
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
